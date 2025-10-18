@@ -28,294 +28,316 @@
 
     </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-white py-4 shadow fixed-top">
-        <div class="container-fluid">
-            <div class="logo">
-                <a class="navbar-brand fs-1" href="#">Book Store</a>
+
+    <!-- ===== HEADER & NAVBAR ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white py-4 shadow fixed-top">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a class="navbar-brand fs-1" href="#">Book Store</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="home()" id="homes" href="">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="books()" id="books" href="#book">TRENDING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="product()" id="products" href="#product">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="review()" id="reviews" href="#review">REVIEW</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="contact()" id="contacts" href="#contact">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="mt-2 btn-login" id="login">Log In</button>
+
+                            <button id="theme-toggle" class="theme-btn">🌙</button>
+
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="home()" id="homes" href="">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="books()" id="books" href="#book">TRENDING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="product()" id="products" href="#product">PRODUCTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="review()" id="reviews" href="#review">REVIEW</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="contact()" id="contacts" href="#contact">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="mt-2 btn-login" id="login">Log In</button>
+        </nav>
 
-                        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </header>
 
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div id="log">
+    <!-- ===== LOGIN SECTION ===== -->
+    <section id="log" class="login-section">
         <input id="logName" type="text" placeholder="Enter Email">
         <input type="password" placeholder="Enter Password"><br>
         <button id="btn">Log In</button>
 
-    </div>
+    </section>
 
-    <div class="main">
-        <div class="text text-center">
-            <h1>Great Deals Exciting Offers</h1>
-            <h3>Save Up to 30% Off</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing Molestiae molestias reprehenderit reet
-                <br>reprehenderit reiciendiset sit amet Molestiae molestias reiciendiset
-            </p>
-            <button id="books" href="#book">Explore</button>
-        </div>
 
-        <img class="d-md-block d-none start-img" src="assets\images\main.jpeg" alt="">
-    </div>
+    <!-- ===== HERO SECTION ===== -->
 
-    <div class="novels" id="book">
-        <div class="head">
-            <h1>Trending <span>Novels</span></h1>
-        </div>
-
-        <div class="shop row w-100 mx-auto">
-            <div class="card col-md-4 mb-4">
-                <img src="assets\images\novel1.jpeg" alt="">
-                <div class="cardText">
-                    <p>UGLY LOVE</p>
-                    <h3>$10</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <button>Add to Cart</button>
-
-                </div>
+    <main>
+        <section class="main">
+            <div class="text text-center">
+                <h1>Great Deals Exciting Offers</h1>
+                <h3>Save Up to 30% Off</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Molestiae molestias reprehenderit reet
+                    <br>reprehenderit reiciendiset sit amet Molestiae molestias reiciendiset
+                </p>
+                <button id="books" href="#book">Explore</button>
             </div>
-            <div class="card col-md-4 mb-4">
-                <img src="assets\images\novel2.jpeg" alt="">
-                <div class="cardText">
-                    <p>ORDINARY GRACE</p>
-                    <h3>$20</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <button>Add to Cart</button>
 
-                </div>
-            </div>
-            <div class="card col-md-4 mb-4">
-                <img src="assets\images\novel3.jpeg" alt="">
-                <div class="cardText">
-                    <p>SONG OF ACHILLES</p>
-                    <h3>$17</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <button>Add to Cart</button>
+            <img class="d-md-block d-none start-img" src="assets\images\main.jpeg" alt="">
+        </section>
 
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="self help books " id="books">
-        <div class="head">
-            <h1>Trending <span>Self Help Books</span></h1>
-        </div>
+        <!-- ===== TRENDING NOVELS ===== -->
+        <div id="book" class="novels">
+            <header class="head">
+                <h1>Trending <span>Novels</span></h1>
+            </header>
 
-        <div class="shop row mx-auto w-100">
-            <div class="card col-md-4 mb-4">
-                <img src="assets\images\book3.jpeg" alt="">
-                <div class="cardText">
-                    <p>THE PSYCHOLOGY OF MONEY</p>
-                    <h3>$30</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="card col-md-4 mb-4">
-                <img src="assets\images\book2.jpeg" alt="">
-                <div class="cardText">
-                    <p>ATOMIC HABITS</p>
-                    <h3>$30</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="card col-md-4 mb-4">
-                <img src="assets\images\book 1.jpeg" alt="">
-                <div class="cardText">
-                    <p>RICH DAD POOR DAD</p>
-                    <h3>$23</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="shop row w-100 mx-auto">
+                <article class="card col-md-4 mb-4">
+                    <img src="assets\images\novel1.jpeg" alt="">
+                    <div class="cardText">
+                        <p>UGLY LOVE</p>
+                        <h3>$10</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add to Cart</button>
 
-    <!-- product -->
-
-    <div class="trend" id="product">
-        <div class="head">
-            <h1>Latest <span>Products</span></h1>
-        </div>
-        <div class="container">
-            <div class="row w-100 mx-auto">
-                <div class="col-md-6 d-flex flex-md-row flex-column mb-4">
-                    <img src="assets\images\fiction.jpeg" class="img-fluid" alt="">
-                    <div class="trendText">
-                        <h2>Latest in Fiction</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aliquam sit.</p>
-                        <a href="https://guides.loc.gov/finding-book-reviews/online-sources-and-databases">Read More</a>
                     </div>
-                </div>
-                <div class="col-md-6 d-flex flex-md-row flex-column mb-4">
-                    <img src="assets\images\non fiction.jpeg" class="img-fluid" alt="">
-                    <div class="trendText">
-                        <h2>Latest in Non-Fiction</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aliquam sit.</p>
-                        <a href="https://guides.loc.gov/finding-book-reviews/online-sources-and-databases">Read More</a>
+                </article>
+                <article class="card col-md-4 mb-4">
+                    <img src="assets\images\novel2.jpeg" alt="">
+                    <div class="cardText">
+                        <p>ORDINARY GRACE</p>
+                        <h3>$20</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add to Cart</button>
+
                     </div>
-                </div>
+                </article>
+                <article class="card col-md-4 mb-4">
+                    <img src="assets\images\novel3.jpeg" alt="">
+                    <div class="cardText">
+                        <p>SONG OF ACHILLES</p>
+                        <h3>$17</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <button>Add to Cart</button>
+
+                    </div>
+                </article>
             </div>
         </div>
-    </div>
 
-    <!-- my review-->
-    <div class="blog" id="review">
-        <div class="head">
-            <h1>Customer <span>Review</span></h1>
-        </div>
-        <div class="container">
-            <div class="row w-100 mx-auto ">
-                <div class="col-md-4 mb-4">
-                    <div class="border p-4">
-                        <img class="img-fluid rounded-circle" src="assets\images\r1.jpg" alt="">
-                        <p class="fs-5 pt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Recusandae odio qui cumque quisquam omnis fuga inventore quasi ipsam. </p>
+
+        <!-- ===== SELF HELP BOOKS ===== -->
+        <section id="books" class="self-help-books">
+            <header class="head">
+                <h1>Trending <span>Self Help Books</span></h1>
+            </header>
+
+            <div class="shop row mx-auto w-100">
+                <article class="card col-md-4 mb-4">
+                    <img src="assets\images\book3.jpeg" alt="">
+                    <div class="cardText">
+                        <p>THE PSYCHOLOGY OF MONEY</p>
+                        <h3>$30</h3>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
+                        <button>Add to Cart</button>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="border p-4">
-                        <img class="img-fluid rounded-circle" src="assets\images\r2.jpg" alt="">
-                        <p class="fs-5 pt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Recusandae odio qui cumque quisquam omnis fuga inventore quasi ipsam. </p>
+                </article>
+                <article class="card col-md-4 mb-4">
+                    <img src="assets\images\book2.jpeg" alt="">
+                    <div class="cardText">
+                        <p>ATOMIC HABITS</p>
+                        <h3>$30</h3>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
+                        <button>Add to Cart</button>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="border p-4">
-                        <img class="img-fluid rounded-circle" src="assets\images\r3.jpg" alt="">
-                        <p class="fs-5 pt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Recusandae odio qui cumque quisquam omnis fuga inventore quasi ipsam. </p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                    <article>
+                        <article class="card col-md-4 mb-4">
+                            <img src="assets\images\book 1.jpeg" alt="">
+                            <div class="cardText">
+                                <p>RICH DAD POOR DAD</p>
+                                <h3>$23</h3>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <button>Add to Cart</button>
+                            </div>
+                        </article>
+            </div>
+        </section>
+
+
+        <!-- ===== PRODUCT SECTION ===== -->
+        <section id="product" class="trend">
+            <header class="head">
+                <h1>Latest <span>Products</span></h1>
+            </header>
+            <div class="container">
+                <div class="row w-100 mx-auto">
+                    <article class="col-md-6 d-flex flex-md-row flex-column mb-4">
+                        <img src="assets\images\fiction.jpeg" class="img-fluid" alt="">
+                        <div class="trendText">
+                            <h2>Latest in Fiction</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aliquam sit.</p>
+                            <a href="https://guides.loc.gov/finding-book-reviews/online-sources-and-databases">Read
+                                More</a>
+                        </div>
+                    </article>
+                    <article class="col-md-6 d-flex flex-md-row flex-column mb-4">
+                        <img src="assets\images\non fiction.jpeg" class="img-fluid" alt="">
+                        <div class="trendText">
+                            <h2>Latest in Non-Fiction</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aliquam sit.</p>
+                            <a href="https://guides.loc.gov/finding-book-reviews/online-sources-and-databases">Read
+                                More</a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="contact" id="contact">
-        <div class="head">
-            <h1>Contact <span>Us</span></h1>
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="col-md-5">
-                <div class="contactUs">
+
+        <!-- ===== REVIEWS ===== -->
+        <section class="blog" id="review">
+            <header class="head">
+                <h1>Customer <span>Review</span></h1>
+            </header>
+            <div class="container">
+                <div class="row w-100 mx-auto ">
+                    <article class="col-md-4 mb-4">
+                        <div class="border p-4">
+                            <img class="img-fluid rounded-circle" src="assets\images\r1.jpg" alt="">
+                            <p class="fs-5 pt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Recusandae odio qui cumque quisquam omnis fuga inventore quasi ipsam. </p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <div class="border p-4">
+                            <img class="img-fluid rounded-circle" src="assets\images\r2.jpg" alt="">
+                            <p class="fs-5 pt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Recusandae odio qui cumque quisquam omnis fuga inventore quasi ipsam. </p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <div class="border p-4">
+                            <img class="img-fluid rounded-circle" src="assets\images\r3.jpg" alt="">
+                            <p class="fs-5 pt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Recusandae odio qui cumque quisquam omnis fuga inventore quasi ipsam. </p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact" id="contact">
+            <header class="head">
+                <h1>Contact <span>Us</span></h1>
+            </header>
+            <div class="d-flex justify-content-center">
+                <form class="col-md-5 contactUs">
                     <h3>Connect With Us</h3>
                     <input id="name" type="text" placeholder="Enter Your Name" class="form-control"> <br>
                     <input id="name" type="text" placeholder="Enter Mobile Number" class="form-control"> <br>
                     <button class="btn px-5 submit-btn" onclick="submit()">Submit</button>
-                </div>
+                </form>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="w-100 mx-auto footer flex-md-row flex-column p-5">
-        <div class="text">
+    </main>
+
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="w-100 mx-auto footer flex-md-row flex-column p-5">
+        <section class="text">
             <h2>About US</h2>
             <p>Lorem ipsum dolor sit amet,consectetur adipisicing <br> elit. Quas voluptatem nesciunt sed placeat
                 dolorum <br>odit facilis ducimus temporibus, quisquam veritatis <br> officiis eos.</p>
-        </div>
-        <div class="text">
+        </section>
+        <section class="text">
             <h2>Books</h2>
             <p>Our Inventory</p>
             <p>Genre</p>
             <p>Quality</p>
             <p>Best Price</p>
 
-        </div>
-        <div class="text">
+        </section>
+        <section class="text">
             <h2>Community</h2>
             <p>Focus</p>
             <p>Customer</p>
             <p>Review</p>
             <p>Offer</p>
 
-        </div>
-        <div class="text">
+        </section>
+        <address class="text">
             <h2>Address</h2>
             <p>lorem ipsum</p>
             <p>ipsum</p>
             <p>lorerm</p>
 
-        </div>
-    </div>
+        </address>
+    </footer>
 
     <button id="backToTopBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
     <script>
         const backToTopBtn = document.getElementById('backToTopBtn');
 
-// Show button when user scrolls down
-window.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    backToTopBtn.classList.add('show');
-  } else {
-    backToTopBtn.classList.remove('show');
-  }
-});
+        // Show button when user scrolls down
+        window.addEventListener('scroll', () => {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
 
-// Smooth scroll to top
-backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+        // Smooth scroll to top
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
